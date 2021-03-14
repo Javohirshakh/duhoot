@@ -397,6 +397,10 @@ header form button{
 .comments .item-icon{
     left: 70px;
 }
+.middle .item-icon{
+    left: 50%;
+    transform: translateX(-50%) translateY(-35px);
+}
 .item-rate{
     position: absolute;
     bottom: 0;
@@ -486,7 +490,9 @@ header form button{
     color: #96a6a7;
     font-size: 14px;
 }
-
+.city i{
+    right: 10px!important;
+}
 
 
 .loadmore{
@@ -606,6 +612,7 @@ footer h2{
 
 
 footer{
+    padding-bottom: 10px;
     background-image: url('https://i.pinimg.com/originals/f1/b4/d8/f1b4d8b97c237d3d03da0c5c32fa416b.jpg');
     min-height: 350px;
     background-size: cover;
@@ -733,6 +740,13 @@ footer .hrgray{
     }
 } */
 @media only screen and (max-width: 1200px) {
+    .comment-short{
+        font-size: 13px;
+        margin-top: 0;
+    }
+    .comment-name{
+        font-size: 15px;
+    }
     .dropped{
         transform: translateY(-250px);
         transition: 0.2s;
@@ -792,8 +806,8 @@ footer .hrgray{
     }
     .links{
         flex-direction: column;
-        justify-content: flex-start!important;
-        align-items: flex-start!important;
+        justify-content: center!important;
+        align-items: center!important;
     }
     .panel{
         min-height: 100px;
@@ -843,9 +857,15 @@ footer .hrgray{
         .footer *{
             text-align: center;
         }
+        .footer > div{
+            margin-bottom: 20px;
+        }
         .social{
             justify-content: space-around;
             width: 100%;
+        }
+        .s > h3{
+            margin-bottom: 10px!important;
         }
         }
         @media only screen and (max-width: 670px) {
